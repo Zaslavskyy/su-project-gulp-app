@@ -1,0 +1,816 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Raleway:300,400,700,800');
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
+main {
+    background-size: cover;
+}
+header {
+    background: url("../img/carpathians.jpg") no-repeat center top;
+    background-size: cover;
+}
+#secondslide {
+    background: url("../img/carpathians2.jpg") no-repeat center top;
+    background-size: cover;
+}
+#thirdslide {
+    background: url("../img/carpathians3.jpg") no-repeat center top;
+    background-size: cover;
+}
+#fourthslide {
+    background: url("../img/carpathians4.jpg") no-repeat center top;
+    background-size: cover;
+}
+#logo {
+    color:#ffffff;
+    font-size: 30px;
+    margin-left: 13%;
+    letter-spacing: 0.32px;
+    display: inline-block;
+    min-width: 100px;
+}
+nav {
+    display: flex;
+    align-items: baseline;
+    margin-right: 15.4735%;
+    padding-top: 48px;
+}
+ul {
+    display: flex;
+    align-items: baseline;
+    margin-left: auto;
+    list-style-type: none; 
+}
+li {
+    margin-left: 26px;
+    color:#ffffff;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.32px;
+}
+#home:before{
+    content: none;
+}
+li:before {
+    content: '\25cb';
+    padding-right: 26px;
+    color:#f4c60b;
+    width: 7px;
+    height: 8px;
+}
+nav a {
+    color:#ffffff;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+    color:#ffffff;
+}
+.cover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    color: #f4c60b;
+    font-family: "Raleway - Extra Bold";
+    font-size: 72px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.44px;
+    margin: 19.625% 0% 0% 0%;
+}
+.cover h3 {
+    color: #ffffff;
+    font-family: "Crimson Text";
+    font-size: 24px;
+    font-style: italic;
+    letter-spacing: 0.48px;
+    margin: 0% 0% 7.9375% 0%;
+}
+.scroll {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.36px;
+    margin: 1.8125% 0% 7% 0%;
+}
+.icofont-scroll-double-down {
+    color: #ffffff;
+    font-size: 67px;
+}
+li[data-target] {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 1px solid #f4c60b;
+    margin: 0px 0px 0px 8px;
+  }
+.carousel-indicators {
+    display: flex;
+    margin: 2.75% 0% 1.8125% 0%;
+  }
+.carousel-indicators li {
+    background-color: transparent;
+  }
+.carousel-indicators .active {
+    background-color: #f4c60b;
+}
+.about {
+    background: url("../img/about_background.jpg") no-repeat center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2 {
+    font-family: "Raleway - Extra Bold";
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.96px;
+    text-align: center;
+    margin: 120px 0px 0px;
+    padding: 0px 0px 13px 0px;
+    border-bottom: solid 7px #f4c60b;
+}
+.about p{
+    font-family: "Crimson Text - Roman";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.36px;
+    margin: 146px 290px 0px 290px;
+    text-align: justify;
+}
+.load {
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.48px;
+    padding: 30px 60px 28px;
+    background-color: transparent;
+    border: 3px solid #f4c60b;
+}
+.about .load {
+    margin: 90px 0px 119px 0px;
+}
+.portfolio, .team, .skills, .services, .pricing, .blog, .clients, .contacts, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio p{
+    font-family: "Crimson Text - Roman";
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    margin: 36px 540px 0px 540px;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px 58px 0px;
+}
+/*Reset bootstrap btn styles*/
+.load:hover,
+.load:focus,
+.load:active:focus,
+.load:active,
+.load a:focus,
+.load a:active,
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+outline: 0!important;
+outline-color: transparent!important;
+outline-width: 0!important;
+outline-style: none!important;
+box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
+background-color: #f4c60b !important;
+border: 3px solid #f4c60b !important;
+}
+.smallbutton:hover {
+    background-color: #f4c60b;
+}
+.load a, .smallbutton a {
+    color: #000000;
+    text-decoration: none;
+}
+.load a:hover, .smallbutton a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+.smallbutton {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.28px;
+    border: 1px solid #f4c60b;
+    padding: 22px 28px;
+    background-color: transparent;
+}
+.galery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0;
+}
+#surfing {
+    background: url("../img/surfing.jpg") no-repeat center center;
+    height: 300px;
+    width: 379px;
+}
+#cameras {
+    background: url("../img/cameras.jpg") no-repeat center center;
+    height: 300px;
+    width: 379px;
+}
+#forest {
+    background: url("../img/forest.jpg") no-repeat center center;
+    height: 300px;
+    width: 379px;
+}
+#underground {
+    background: url("../img/underground.jpg") no-repeat center center;
+    height: 300px;
+    width: 379px;
+}
+#terassa {
+    background: url("../img/terassa.jpg") no-repeat center center;
+    height: 300px;
+    width: 379px;
+}
+#ocean {
+    background: url("../img/ocean.jpg") no-repeat center center;
+    height: 300px;
+    width: 379px;
+}
+#whitebuilding {
+    background: url("../img/whitebuilding.jpg") no-repeat center center;
+    height: 300px;
+    width: 379px;
+}
+#city {
+    background: url("../img/city.jpg") no-repeat center center;
+    height: 300px;
+    width: 379px;
+}
+#gallerybutton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0px 0px; 
+}
+.team h2 {
+    margin: 180px 0px 118px;
+}
+.teammates, .pricerows, .blogcalendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#photographer {
+    margin: 0px 4.6%;
+}
+.teammate figure img {
+    height: 262px;
+    width: 262px;
+}
+figure {
+    margin: 0 auto;
+}
+figcaption p:first-child {
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.48px;
+    text-align: center;
+}
+figcaption p:last-child {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.36px;
+    text-align: center;
+    margin-bottom: 143px;
+}
+.skills {
+    background: url("../img/skills_background.jpg") no-repeat center center;
+    background-size: cover;
+}
+.skills h2 {
+    margin: 122px 0px 185px;
+}
+.diagrams {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.diagrams div:first-child {
+    margin-right: 13.36%;
+}
+.diagrams div:last-child {
+    margin-left: 13.36%;
+}
+.diagrams div p:first-child {
+    font-family: Raleway;
+    font-size: 48px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.96px;
+    padding: 60px 42px;
+    border: 7px solid #000000;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.diagrams div p:last-child {
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.48px;
+    text-align: center;
+    margin-bottom: 122px;
+}
+.diagrams div p span {
+    font-size: 24px;
+    letter-spacing: 0.48px;
+}
+.quote {
+    background: url("../img/quote_background.jpg") no-repeat center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.quote p:first-child {
+    padding: 120px 1.9% 19px 16.72%;
+    margin: 0 !important;
+}
+.quote p:nth-child(2n+1) {
+    font-size: 25px;
+    color: #f4c60b;
+}
+.quote p:nth-child(2) {
+    color: #ffffff;
+    font-family: "Crimson Text - Roman";
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 0.68px;
+    align-self: center;
+    padding: 0px 20.86% 0px 20.86%;
+    margin: 0 !important;
+}
+.quote p:nth-child(3) {
+    align-self: flex-end !important;
+    padding: 0px 16.8% 46px 1.6%;
+    margin: 0 !important;
+}
+.quote p:last-child {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    align-self: flex-end !important;
+    padding: 0px 21.02% 118px 0px;
+}
+.services h2 {
+    margin: 118px 0px 126px;
+}
+.serviceimages {
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+}
+.serviceimages div h3 {
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+.serviceimages div {
+    text-align: center;
+}
+.serviceimages div:first-child {
+    margin: 0px 0px 116px 17%;
+}
+.serviceimages div:last-child {
+    margin: 0px 17% 116px 0px;
+}
+.serviceimages div:nth-child(2) {
+    margin-bottom: 116px;
+    margin-left: 11.62%;
+    margin-right: 11.62%;
+}
+.serviceimages div img {
+    padding-bottom: 74px;
+}
+.serviceimages div p {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.28px;
+}
+.pricing {
+    background: url("../img/pricing_background.jpg") no-repeat center center;
+    background-size: cover;
+}
+.pricing h2 {
+    margin: 122px 0px 104px;
+}
+.pricerows div {
+    border: 1px solid #ffffff;
+    margin-bottom: 128px;
+}
+.pricerows div:nth-child(2) {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+.pricerows div p:first-child {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.36px;
+    background-color: #ffffff;
+    margin: 0px;
+}
+.pricerows div button:hover {
+    background-color: #837c7c;
+}
+.pricerows div button a {
+    text-decoration: none;
+    color: #000000;
+}
+.pricerows div button a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+#basic {
+    padding: 26px 86px 24px;
+}
+#professional {
+    padding: 26px 42px 24px;
+}
+#vip {
+    padding: 26px 98px 24px;
+}
+.pricerows div p:nth-child(2) {
+    font-family: Raleway;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+.pricerows div p:nth-child(2) span {
+    font-size: 24px;
+    letter-spacing: 0.48px;
+}
+.pricerows div p:nth-child(3) {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 48px;
+    letter-spacing: 0.36px;
+    text-align: center;
+    margin-bottom: 72px;
+}
+.pricerows div button {
+    font-family: "Raleway - Extra Bold";
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.28px;
+    padding: 22px 58px;
+    background-color: #ffffff;
+    margin: 0px 20px 20px;
+    border: 0px;
+}
+#summerphotos {
+    background: url("../img/summerphotos.jpg") no-repeat center top;
+    background-size: cover;
+}
+#businessevent {
+    background: url("../img/businessevent.jpg") no-repeat center top;
+    background-size: cover;
+}
+#niceday {
+    background: url("../img/niceday.jpg") no-repeat center top;
+    background-size: cover;
+}
+#niceday, #businessevent, #summerphotos {
+    width: 258px;
+    height: 378px;
+}
+.blog h2 {
+    margin: 122px 0px 87px;
+}
+.blogcalendar .calendarcards:nth-child(2) {
+    margin: 0px 68px 0px;
+}
+h4 {
+    color: #ffffff;
+    font-family: "Raleway - Extra Bold";
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.36px;
+    min-width: 166px;
+    margin: 40px 0px 190px 16px;
+}
+#secondhead h4 {
+    margin-bottom: 170px;
+}
+#thirdhead h4 {
+    margin-bottom: 212px;
+}
+.date {
+    color: #ffffff;
+    font-family: "Raleway - Extra Bold";
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.72px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px 0px 18px;
+}
+.date span:first-child {
+    font-family: "Raleway - Extra Bold";
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.72px;
+}
+.date span:last-child {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.28px;
+}
+.calendarcards p:last-child {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.24px;
+}
+.calendarcards div p {
+    padding-right: 22px;
+    padding-left: 18px;
+    border-bottom-width: 24px;
+    margin-bottom: 24px;
+}
+.headofimg {
+    display: flex;
+    flex-direction: row;
+}
+.clients h2 {
+    margin: 122px 0px 44px;
+}
+.clients p {
+    font-family: "Crimson Text - Roman";
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    margin-bottom: 117px;
+}
+.labels {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0;
+}
+.labels div {
+    border: 1px solid #ebebeb;
+    margin: 0 !important;
+}
+#apple {
+    background: url("../img/apple.jpg") no-repeat center center;
+    height: 240px;
+    width: 377px;
+    margin: 0 auto;
+}
+#vogue {
+    background: url("../img/vogue.jpg") no-repeat center center;
+    height: 240px;
+    width: 377px;
+    margin: 0 auto;
+}
+#starbucks {
+    background: url("../img/starbucks.jpg") no-repeat center center;
+    height: 240px;
+    width: 377px;
+    margin: 0 auto;
+}
+#nivea {
+    background: url("../img/nivea.jpg") no-repeat center center;
+    height: 240px;
+    width: 377px;
+    margin: 0 auto;
+}
+#chanel {
+    background: url("../img/chanel.jpg") no-repeat center center;
+    height: 240px;
+    width: 377px;
+    margin: 0 auto;
+}
+#microsoft {
+    background: url("../img/microsoft.jpg") no-repeat center center;
+    height: 240px;
+    width: 377px;
+    margin: 0 auto;
+}
+#nintendo {
+    background: url("../img/nintendo.jpg") no-repeat center center;
+    height: 240px;
+    width: 377px;
+    margin: 0 auto;
+}
+#gq {
+    background: url("../img/gq.jpg") no-repeat center center;
+    height: 240px;
+    width: 377px;
+    margin: 0 auto;
+}
+.contacts {
+    background: url("../img/contacts_background.jpg") no-repeat center top;
+    background-size: cover;
+}
+.contacts h2 {
+    margin: 42px 0px 106px;
+    color: #ffffff;
+}
+input:first-child, input:nth-child(2) {
+    width: 222px;
+    height: 52px;
+    border: 3px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    font-family: "Raleway - Extra Bold";
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.28px;
+    padding-left: 22px;
+    margin: 0px 18px 14px 0px;
+}
+input[name="textarea"] {
+    width: 466px;
+    height: 222px;
+    border: 3px solid #ffffff;
+    background: transparent;
+    margin-bottom: 8px;
+    color:#ffffff;
+}
+button[type="submit"] {
+    color: #000000;
+    font-family: "Raleway - Extra Bold";
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.28px;
+    background-color: #f4c60b;
+    padding: 22px 54px;
+    border: 0px;
+    margin-bottom: 60px;
+}
+button[type="submit"]:hover {
+    background-color: #af9014;
+    cursor: pointer;
+}
+footer {
+    background-color: #303030;
+    background-size: cover;
+}
+footer p i {
+    font-size: 30px;
+    color: #ffffff;
+    margin: 50px 0px 20px;
+}
+footer h5:nth-child(2) {
+    color: #ffffff;
+    font-family: "Raleway - Extra Bold";
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.48px;
+    margin: 0px 0px 16px;
+}
+footer h5:nth-child(3) {
+    color: #ffffff;
+    font-family: "Crimson Text";
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 0.24px;
+    margin: 0px;
+}
+.socialnetworks {
+    margin: 62px 0px 36px;
+}
+.socialnetworks i {
+    font-size: 22px;
+}
+footer p:last-child {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.24px;
+    margin: 0px 0px 20px;
+}
+
+@media (max-width: 874px) {
+    .teammates, .serviceimages, .blogcalendar, .diagrams {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .services .serviceimages div {
+        margin: 0px 0px 84px;
+    }
+    .calendarcards {
+        margin-bottom: 30px;
+    }
+    .diagrams div {
+        margin: 0 !important;
+    }
+}
+@media (max-width: 1046px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+@media (max-width: 730px) {
+    .pricerows, .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .smallbutton {
+        width: 162px;
+        height: 53px;
+        margin: 10px;
+    }
+    input:first-child, input:nth-child(2) {
+        width: 38.68%;
+        height: 52px;
+    }
+    input[name="textarea"] {
+        width: 93.08%;
+    }
+}
+@media (max-width: 508px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 380px) {
+    h1 {
+        font-size: 38px;
+    }
+    .photobloq {
+        width: 100% !important;
+    }
+}
