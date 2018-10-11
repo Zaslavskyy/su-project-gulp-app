@@ -473,6 +473,7 @@ figcaption p:last-child {
 }
 .pricerows div button:hover {
     background-color: #837c7c;
+    text-decoration: underline;
 }
 .pricerows div button a {
     text-decoration: none;
