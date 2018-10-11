@@ -9,7 +9,7 @@ body {
 main {
     background-size: cover;
 }
-header {
+#firstslide {
     background: url("../img/carpathians.jpg") no-repeat center top;
     background-size: cover;
 }
@@ -216,9 +216,11 @@ outline-style: none!important;
 box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 background-color: #f4c60b !important;
 border: 3px solid #f4c60b !important;
+text-decoration: underline;
 }
 .smallbutton:hover {
     background-color: #f4c60b;
+    text-decoration: underline;
 }
 .load a, .smallbutton a {
     color: #000000;

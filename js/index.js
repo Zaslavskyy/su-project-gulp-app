@@ -1,3 +1,4 @@
+
 $(window).scroll(function() {
     $('.mov1').each(function(){
       var imagePos = $(this).offset().top;
@@ -25,3 +26,4 @@ $(window).scroll(function() {
       }
     });
   });
+
