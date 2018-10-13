@@ -562,8 +562,8 @@ figcaption p:last-child {
 .blog h2 {
     margin: 122px 0px 87px;
 }
-.blogcalendar .calendarcards:nth-child(2) {
-    margin: 0px 68px 0px;
+#businessevent {
+    margin: 0px 4.12% 0px;
 }
 h4 {
     color: #ffffff;
@@ -790,7 +790,7 @@ footer p:last-child {
     .services .serviceimages div {
         margin: 0px 0px 84px;
     }
-    .calendarcards {
+    .calendarcards, #businessevent {
         margin-bottom: 30px;
     }
     .diagrams div {
@@ -888,5 +888,12 @@ footer p:last-child {
     }
     .photobloq {
         width: 100% !important;
+    }
+    .main-menu {
+        padding-right: 16px;
+    }
+    #logo {
+        font-size: 26px;
+        padding-left: 16px;
     }
 }
