@@ -25,25 +25,41 @@ main {
     background: url("../img/carpathians4.jpg") no-repeat center top;
     background-size: cover;
 }
+header {
+    background: url("../img/nav_background.jpg") no-repeat center top;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+
 #logo {
     color:#ffffff;
     font-size: 30px;
-    margin-left: 13%;
+    margin-left: 10%;
+    margin-top: 34px;
     letter-spacing: 0.32px;
     display: inline-block;
     min-width: 100px;
+    
+}
+.header-container {
+    display: flex;
+    justify-content: space-around;
 }
 nav {
     display: flex;
     align-items: baseline;
-    margin-right: 15.4735%;
     padding-top: 48px;
+    
+   
 }
 ul {
     display: flex;
     align-items: baseline;
     margin-left: auto;
     list-style-type: none; 
+    margin-right: 15.43%; 
 }
 li {
     margin-left: 26px;
@@ -53,6 +69,9 @@ li {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.32px;
+}
+header li:nth-child(2) {
+    min-width: 122px;
 }
 #home:before{
     content: none;
@@ -778,12 +797,66 @@ footer p:last-child {
         margin: 0 !important;
     }
 }
+#menu-checkbox {
+    display: none;
+}
 @media (max-width: 1046px) {
-    ul {
+   /*  ul {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+    } */
+    .header-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
+    .main-menu {
+        display: none;
+    }
+    .main-menu li {
+        width: 100%;
+        display: block;
+        font-size: 16px;
+    }
+    .main-menu a {
+        display: block;
+        padding: 3px;
+    }
+    .toggle-button {
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: #f4c60b;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.32px;
+
+    }
+    .toggle-button:after {
+        content: attr(data-open);
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu {
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+        content: attr(data-close);
+    }
+    .header-container a {
+        margin-right: -65px;
+    }
+    .main-menu {
+        position: relative;
+        /* top: 30px;
+        right: 115px; */
+    }
+    li:before {
+        display: none;
+    }
+
 }
 @media (max-width: 730px) {
     .pricerows, .buttons {
