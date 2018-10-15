@@ -1,5 +1,4 @@
-$(".icofont-scroll-double-down").fadeOut(5000).fadeIn(4000);
- 
+
 $(window).scroll(function() {
     $('.mov1').each(function(){
       var imagePos = $(this).offset().top;
