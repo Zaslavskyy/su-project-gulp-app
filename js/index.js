@@ -1,16 +1,6 @@
-/* 
-function loadParagraph() {
-var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function() {
-  if(xhr.readyState == 4 && xhr.status === 200) {
-    document.getElementById('about').innerHTML = xhr.responseText;
-  }
-};
-xhr.open('GET', 'data/data.html', true);
-xhr.send('null');
-} */
 
-function loadDoc() {
+
+function loadParagraph() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -30,6 +20,9 @@ $(window).scroll(function() {
       if (imagePos < topOfWindow+550) {
         $(this).addClass('pulse');
       }
+    else {
+      this.classList.remove("pulse");
+    }
     });
   });
   $(window).scroll(function() {
@@ -39,6 +32,9 @@ $(window).scroll(function() {
       if (imagePos < topOfWindow+200) {
         $(this).addClass('bounceInRight');
       }
+      else {
+        this.classList.remove("bounceInRight");
+      }
     });
   });
   $(window).scroll(function() {
@@ -47,6 +43,9 @@ $(window).scroll(function() {
       var topOfWindow = $(window).scrollTop();
       if (imagePos < topOfWindow+400) {
         $(this).addClass('bounceIn');
+      }
+      else {
+        this.classList.remove("bounceIn");
       }
     });
   });
