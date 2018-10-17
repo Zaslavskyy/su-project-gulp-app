@@ -1,12 +1,14 @@
+
+function loadParagraph() {
 var xhr = new XMLHttpRequest();
-xhr.onclick(#about) = functionLoad() {
-  if(xhr.status === 200) {
+xhr.onreadystatechange = function() {
+  if(xhr.readyState == 4 && xhr.status === 200) {
     document.getElementById('about').innerHTML = xhr.responseText;
   }
 };
 xhr.open('GET', 'data/data.html', true);
 xhr.send('null');
-
+}
 
 
 
