@@ -1,3 +1,15 @@
+var xhr = new XMLHttpRequest();
+xhr.onclick(#about) = function() {
+  if(xhr.status === 200) {
+    document.getElementById('about').innerHTML = xhr.responseText;
+  }
+};
+xhr.open('GET', 'data/data.html', true);
+xhr.send('null');
+
+
+
+
 
 $(window).scroll(function() {
     $('.mov1').each(function(){
