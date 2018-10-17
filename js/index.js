@@ -1,5 +1,5 @@
 var xhr = new XMLHttpRequest();
-xhr.onclick(#about) = function() {
+xhr.onclick(#about) = functionLoad() {
   if(xhr.status === 200) {
     document.getElementById('about').innerHTML = xhr.responseText;
   }
