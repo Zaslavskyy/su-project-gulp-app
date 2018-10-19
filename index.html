@@ -106,27 +106,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget dapibus libero. Phasellus eget efficitur arcu. Maecenas malesuada est ac auctor sollicitudin. Nulla vitae lacinia lectus. Vivamus ullamcorper blandit lectus quis sollicitudin. Cras non condimentum tellus. Proin vitae pretium dui, a facilisis neque. Vivamus nec viverra ligula. Mauris non vulputate lorem. Donec quis faucibus libero, ut imperdiet tortor. Duis sit amet erat odio. Proin massa felis, efficitur sit amet lacus porttitor, tincidunt pretium tellus. Praesent euismod, ante sit amet aliquam convallis, lectus nisi tincidunt nulla, et bibendum tortor libero ut erat. Proin et pellentesque ipsum. Maecenas vel nulla ac enim fringilla ultrices id elementum felis.
             </p>
             <div id="scriptResults"></div>
-            <button type="button" onclick="loadParagraph()" class="load btn btn-primary" data-toggle="modal" data-target="#exampleModalLong"><a href="#">load more</a></button>
-        <!-- Modal -->
-               <!--  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                <div class="modal-body">
-          ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-            </div>
-        </div> -->
+            <button type="button" id="loadText" class="load btn btn-primary" data-toggle="modal" data-target="#exampleModalLong"><a href="#">load more</a></button>
         </section>
         <section class="portfolio" id="portfolio">
             <h2 class="animated mov2">portfolio</h2>
@@ -159,7 +139,20 @@
             </div>
         </div>
         <div id="gallerybutton">
-            <button class="load"><a href="#">load more</a></button>
+            <button class="load" id="modalBtn"><a href="#">load more</a></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <img src="img/cameras_bw.jpg" alt="Cameras black&white">
+                  <img src="img/forest_bw.jpg" alt="Forest black&white">
+                  <img src="img/ocean_bw.jpg" alt="Ocean black&white">
+                  <img src="img/terassa_bw.jpg" alt="Terassa black&white">
+                  <img src="img/underground_bw.jpg" alt="Underground black&white">
+                  <img src="img/whitebuilding_bw.jpg" alt="Whitebuilding black&white">
+                  <img src="img/surfing_bw.jpg" alt="Surfing black&white">
+                  <img src="img/city_bw.jpg" alt="City black&white">
+                </div>
+              </div>
         </div>
         <section class="team">
             <h2 class="animated mov2">our team</h2>
